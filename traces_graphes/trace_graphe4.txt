@@ -1,4 +1,3 @@
-C:\Users\emili\PycharmProjects\vjudge\Vjudge\.venv\Scripts\python.exe C:\Users\emili\PycharmProjects\Theorie-des-graphes_Projet_Garnung-Nguyen\main.py 
 ------------------------------------
 Pour arrêter le test, tapez 'stop'.
 Quel graphe voulez-vous tester ?
