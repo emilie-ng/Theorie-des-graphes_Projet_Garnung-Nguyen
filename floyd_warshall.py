@@ -20,10 +20,10 @@ def floyd_warshall(L) :
 
     print("L initiale")
     afficher_graphe(L)
-    print("")
+    print("------------------------------------")
     print("P initiale")
     afficher_graphe(P)
-    print("")
+    print("------------------------------------")
 
     #calcul des plus courts chemins
     for k in range(n) :
@@ -35,10 +35,10 @@ def floyd_warshall(L) :
 
         print("L après l'itération k =", k+1)
         afficher_graphe(L)
-        print("")
+        print("------------------------------------")
         print("P après l'itération k =", k+1)
         afficher_graphe(P)
-        print("")
+        print("------------------------------------")
 
         #un terme négatif sur la diagonale = circuit absorbant : on arrête
         for i in range(n) :
