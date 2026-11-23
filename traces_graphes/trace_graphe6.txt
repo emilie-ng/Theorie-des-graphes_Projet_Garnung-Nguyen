@@ -1,0 +1,39 @@
+------------------------------------
+Pour arrêter le test, tapez 'stop'.
+Quel graphe voulez-vous tester ?
+Saisie : 6
+------------------------------------
+L initiale
+     0   1   2  3
+  0  0   1  -5  ∞
+  1  ∞  -1  -3  2
+  2  6   4   0  2
+  3  ∞   ∞   2  0
+------------------------------------
+P initiale
+     0  1  2  3
+  0  0  0  0  0
+  1  1  1  1  1
+  2  2  2  2  2
+  3  3  3  3  3
+------------------------------------
+L après l'itération k = 1
+     0   1   2  3
+  0  0   1  -5  ∞
+  1  ∞  -1  -3  2
+  2  6   4   0  2
+  3  ∞   ∞   2  0
+------------------------------------
+P après l'itération k = 1
+     0  1  2  3
+  0  0  0  0  0
+  1  1  1  1  1
+  2  2  2  2  2
+  3  3  3  3  3
+------------------------------------
+Le graphe contient au moins un circuit absorbant.
+------------------------------------
+Quel graphe voulez-vous tester ?
+Saisie : stop
+
+Process finished with exit code 0
