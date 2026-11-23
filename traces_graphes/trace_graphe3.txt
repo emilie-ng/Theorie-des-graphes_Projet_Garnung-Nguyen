@@ -1,0 +1,109 @@
+C:\Users\emili\PycharmProjects\vjudge\Vjudge\.venv\Scripts\python.exe C:\Users\emili\PycharmProjects\Theorie-des-graphes_Projet_Garnung-Nguyen\main.py 
+------------------------------------
+Pour arrêter le test, tapez 'stop'.
+Quel graphe voulez-vous tester ?
+Saisie : 3
+------------------------------------
+L initiale
+     0  1   2  3
+  0  0  1  -5  ∞
+  1  ∞  0  -3  2
+  2  ∞  4   0  2
+  3  ∞  ∞   ∞  0
+------------------------------------
+P initiale
+     0  1  2  3
+  0  0  0  0  0
+  1  1  1  1  1
+  2  2  2  2  2
+  3  3  3  3  3
+------------------------------------
+L après l'itération k = 1
+     0  1   2  3
+  0  0  1  -5  ∞
+  1  ∞  0  -3  2
+  2  ∞  4   0  2
+  3  ∞  ∞   ∞  0
+------------------------------------
+P après l'itération k = 1
+     0  1  2  3
+  0  0  0  0  0
+  1  1  1  1  1
+  2  2  2  2  2
+  3  3  3  3  3
+------------------------------------
+L après l'itération k = 2
+     0  1   2  3
+  0  0  1  -5  3
+  1  ∞  0  -3  2
+  2  ∞  4   0  2
+  3  ∞  ∞   ∞  0
+------------------------------------
+P après l'itération k = 2
+     0  1  2  3
+  0  0  0  0  1
+  1  1  1  1  1
+  2  2  2  2  2
+  3  3  3  3  3
+------------------------------------
+L après l'itération k = 3
+     0   1   2   3
+  0  0  -1  -5  -3
+  1  ∞   0  -3  -1
+  2  ∞   4   0   2
+  3  ∞   ∞   ∞   0
+------------------------------------
+P après l'itération k = 3
+     0  1  2  3
+  0  0  2  0  2
+  1  1  1  1  2
+  2  2  2  2  2
+  3  3  3  3  3
+------------------------------------
+L après l'itération k = 4
+     0   1   2   3
+  0  0  -1  -5  -3
+  1  ∞   0  -3  -1
+  2  ∞   4   0   2
+  3  ∞   ∞   ∞   0
+------------------------------------
+P après l'itération k = 4
+     0  1  2  3
+  0  0  2  0  2
+  1  1  1  1  2
+  2  2  2  2  2
+  3  3  3  3  3
+------------------------------------
+Le graphe ne contient pas de circuit absorbant.
+------------------------------------
+1 - Afficher un chemin
+2 - Afficher tous les chemins
+3 - Arrêter
+Saisie : 2
+------------------------------------
+Chemin minimal de 0 à 0 : 0 (valeur 0)
+Chemin minimal de 0 à 1 : 0 -> 2 -> 1 (valeur -1)
+Chemin minimal de 0 à 2 : 0 -> 2 (valeur -5)
+Chemin minimal de 0 à 3 : 0 -> 2 -> 3 (valeur -3)
+Il n'existe pas de chemin de 1 à 0
+Chemin minimal de 1 à 1 : 1 (valeur 0)
+Chemin minimal de 1 à 2 : 1 -> 2 (valeur -3)
+Chemin minimal de 1 à 3 : 1 -> 2 -> 3 (valeur -1)
+Il n'existe pas de chemin de 2 à 0
+Chemin minimal de 2 à 1 : 2 -> 1 (valeur 4)
+Chemin minimal de 2 à 2 : 2 (valeur 0)
+Chemin minimal de 2 à 3 : 2 -> 3 (valeur 2)
+Il n'existe pas de chemin de 3 à 0
+Il n'existe pas de chemin de 3 à 1
+Il n'existe pas de chemin de 3 à 2
+Chemin minimal de 3 à 3 : 3 (valeur 0)
+------------------------------------
+1 - Afficher un chemin
+2 - Afficher tous les chemins
+3 - Arrêter
+Saisie : 3
+------------------------------------
+Quel graphe voulez-vous tester ?
+Saisie : stop
+
+Process finished with exit code 0
