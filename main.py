@@ -21,6 +21,7 @@ while num != "stop" : #boucle pour tester les graphes sans relancer le programme
     #programme indique si le graphe contient au moins un circuit absorbant + affichage des chemins de valeurs minimales
     if absorbant :
         print("Le graphe contient au moins un circuit absorbant.")
+        print("------------------------------------")
     else :
         print("Le graphe ne contient pas de circuit absorbant.")
         print("------------------------------------")
