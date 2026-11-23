@@ -1,0 +1,231 @@
+------------------------------------
+Pour arrêter le test, tapez 'stop'.
+Quel graphe voulez-vous tester ?
+Saisie : 7
+------------------------------------
+L initiale
+     0  1   2  3  4  5   6
+  0  0  2  -5  ∞  ∞  ∞   ∞
+  1  ∞  0  -3  3  ∞  ∞   ∞
+  2  7  4   0  3  ∞  ∞   ∞
+  3  ∞  ∞   2  0  ∞  ∞   ∞
+  4  ∞  ∞   ∞  ∞  0  5   ∞
+  5  ∞  ∞   ∞  ∞  2  0  -2
+  6  ∞  ∞   ∞  ∞  ∞  ∞   0
+------------------------------------
+P initiale
+     0  1  2  3  4  5  6
+  0  0  0  0  0  0  0  0
+  1  1  1  1  1  1  1  1
+  2  2  2  2  2  2  2  2
+  3  3  3  3  3  3  3  3
+  4  4  4  4  4  4  4  4
+  5  5  5  5  5  5  5  5
+  6  6  6  6  6  6  6  6
+------------------------------------
+L après l'itération k = 1
+     0  1   2  3  4  5   6
+  0  0  2  -5  ∞  ∞  ∞   ∞
+  1  ∞  0  -3  3  ∞  ∞   ∞
+  2  7  4   0  3  ∞  ∞   ∞
+  3  ∞  ∞   2  0  ∞  ∞   ∞
+  4  ∞  ∞   ∞  ∞  0  5   ∞
+  5  ∞  ∞   ∞  ∞  2  0  -2
+  6  ∞  ∞   ∞  ∞  ∞  ∞   0
+------------------------------------
+P après l'itération k = 1
+     0  1  2  3  4  5  6
+  0  0  0  0  0  0  0  0
+  1  1  1  1  1  1  1  1
+  2  2  2  2  2  2  2  2
+  3  3  3  3  3  3  3  3
+  4  4  4  4  4  4  4  4
+  5  5  5  5  5  5  5  5
+  6  6  6  6  6  6  6  6
+------------------------------------
+L après l'itération k = 2
+     0  1   2  3  4  5   6
+  0  0  2  -5  5  ∞  ∞   ∞
+  1  ∞  0  -3  3  ∞  ∞   ∞
+  2  7  4   0  3  ∞  ∞   ∞
+  3  ∞  ∞   2  0  ∞  ∞   ∞
+  4  ∞  ∞   ∞  ∞  0  5   ∞
+  5  ∞  ∞   ∞  ∞  2  0  -2
+  6  ∞  ∞   ∞  ∞  ∞  ∞   0
+------------------------------------
+P après l'itération k = 2
+     0  1  2  3  4  5  6
+  0  0  0  0  1  0  0  0
+  1  1  1  1  1  1  1  1
+  2  2  2  2  2  2  2  2
+  3  3  3  3  3  3  3  3
+  4  4  4  4  4  4  4  4
+  5  5  5  5  5  5  5  5
+  6  6  6  6  6  6  6  6
+------------------------------------
+L après l'itération k = 3
+     0   1   2   3  4  5   6
+  0  0  -1  -5  -2  ∞  ∞   ∞
+  1  4   0  -3   0  ∞  ∞   ∞
+  2  7   4   0   3  ∞  ∞   ∞
+  3  9   6   2   0  ∞  ∞   ∞
+  4  ∞   ∞   ∞   ∞  0  5   ∞
+  5  ∞   ∞   ∞   ∞  2  0  -2
+  6  ∞   ∞   ∞   ∞  ∞  ∞   0
+------------------------------------
+P après l'itération k = 3
+     0  1  2  3  4  5  6
+  0  0  2  0  2  0  0  0
+  1  2  1  1  2  1  1  1
+  2  2  2  2  2  2  2  2
+  3  2  2  3  3  3  3  3
+  4  4  4  4  4  4  4  4
+  5  5  5  5  5  5  5  5
+  6  6  6  6  6  6  6  6
+------------------------------------
+L après l'itération k = 4
+     0   1   2   3  4  5   6
+  0  0  -1  -5  -2  ∞  ∞   ∞
+  1  4   0  -3   0  ∞  ∞   ∞
+  2  7   4   0   3  ∞  ∞   ∞
+  3  9   6   2   0  ∞  ∞   ∞
+  4  ∞   ∞   ∞   ∞  0  5   ∞
+  5  ∞   ∞   ∞   ∞  2  0  -2
+  6  ∞   ∞   ∞   ∞  ∞  ∞   0
+------------------------------------
+P après l'itération k = 4
+     0  1  2  3  4  5  6
+  0  0  2  0  2  0  0  0
+  1  2  1  1  2  1  1  1
+  2  2  2  2  2  2  2  2
+  3  2  2  3  3  3  3  3
+  4  4  4  4  4  4  4  4
+  5  5  5  5  5  5  5  5
+  6  6  6  6  6  6  6  6
+------------------------------------
+L après l'itération k = 5
+     0   1   2   3  4  5   6
+  0  0  -1  -5  -2  ∞  ∞   ∞
+  1  4   0  -3   0  ∞  ∞   ∞
+  2  7   4   0   3  ∞  ∞   ∞
+  3  9   6   2   0  ∞  ∞   ∞
+  4  ∞   ∞   ∞   ∞  0  5   ∞
+  5  ∞   ∞   ∞   ∞  2  0  -2
+  6  ∞   ∞   ∞   ∞  ∞  ∞   0
+------------------------------------
+P après l'itération k = 5
+     0  1  2  3  4  5  6
+  0  0  2  0  2  0  0  0
+  1  2  1  1  2  1  1  1
+  2  2  2  2  2  2  2  2
+  3  2  2  3  3  3  3  3
+  4  4  4  4  4  4  4  4
+  5  5  5  5  5  5  5  5
+  6  6  6  6  6  6  6  6
+------------------------------------
+L après l'itération k = 6
+     0   1   2   3  4  5   6
+  0  0  -1  -5  -2  ∞  ∞   ∞
+  1  4   0  -3   0  ∞  ∞   ∞
+  2  7   4   0   3  ∞  ∞   ∞
+  3  9   6   2   0  ∞  ∞   ∞
+  4  ∞   ∞   ∞   ∞  0  5   3
+  5  ∞   ∞   ∞   ∞  2  0  -2
+  6  ∞   ∞   ∞   ∞  ∞  ∞   0
+------------------------------------
+P après l'itération k = 6
+     0  1  2  3  4  5  6
+  0  0  2  0  2  0  0  0
+  1  2  1  1  2  1  1  1
+  2  2  2  2  2  2  2  2
+  3  2  2  3  3  3  3  3
+  4  4  4  4  4  4  4  5
+  5  5  5  5  5  5  5  5
+  6  6  6  6  6  6  6  6
+------------------------------------
+L après l'itération k = 7
+     0   1   2   3  4  5   6
+  0  0  -1  -5  -2  ∞  ∞   ∞
+  1  4   0  -3   0  ∞  ∞   ∞
+  2  7   4   0   3  ∞  ∞   ∞
+  3  9   6   2   0  ∞  ∞   ∞
+  4  ∞   ∞   ∞   ∞  0  5   3
+  5  ∞   ∞   ∞   ∞  2  0  -2
+  6  ∞   ∞   ∞   ∞  ∞  ∞   0
+------------------------------------
+P après l'itération k = 7
+     0  1  2  3  4  5  6
+  0  0  2  0  2  0  0  0
+  1  2  1  1  2  1  1  1
+  2  2  2  2  2  2  2  2
+  3  2  2  3  3  3  3  3
+  4  4  4  4  4  4  4  5
+  5  5  5  5  5  5  5  5
+  6  6  6  6  6  6  6  6
+------------------------------------
+Le graphe ne contient pas de circuit absorbant.
+------------------------------------
+1 - Afficher un chemin
+2 - Afficher tous les chemins
+3 - Arrêter
+Saisie : 2
+------------------------------------
+Chemin minimal de 0 à 0 : 0 (valeur 0)
+Chemin minimal de 0 à 1 : 0 -> 2 -> 1 (valeur -1)
+Chemin minimal de 0 à 2 : 0 -> 2 (valeur -5)
+Chemin minimal de 0 à 3 : 0 -> 2 -> 3 (valeur -2)
+Il n'existe pas de chemin de 0 à 4
+Il n'existe pas de chemin de 0 à 5
+Il n'existe pas de chemin de 0 à 6
+Chemin minimal de 1 à 0 : 1 -> 2 -> 0 (valeur 4)
+Chemin minimal de 1 à 1 : 1 (valeur 0)
+Chemin minimal de 1 à 2 : 1 -> 2 (valeur -3)
+Chemin minimal de 1 à 3 : 1 -> 2 -> 3 (valeur 0)
+Il n'existe pas de chemin de 1 à 4
+Il n'existe pas de chemin de 1 à 5
+Il n'existe pas de chemin de 1 à 6
+Chemin minimal de 2 à 0 : 2 -> 0 (valeur 7)
+Chemin minimal de 2 à 1 : 2 -> 1 (valeur 4)
+Chemin minimal de 2 à 2 : 2 (valeur 0)
+Chemin minimal de 2 à 3 : 2 -> 3 (valeur 3)
+Il n'existe pas de chemin de 2 à 4
+Il n'existe pas de chemin de 2 à 5
+Il n'existe pas de chemin de 2 à 6
+Chemin minimal de 3 à 0 : 3 -> 2 -> 0 (valeur 9)
+Chemin minimal de 3 à 1 : 3 -> 2 -> 1 (valeur 6)
+Chemin minimal de 3 à 2 : 3 -> 2 (valeur 2)
+Chemin minimal de 3 à 3 : 3 (valeur 0)
+Il n'existe pas de chemin de 3 à 4
+Il n'existe pas de chemin de 3 à 5
+Il n'existe pas de chemin de 3 à 6
+Il n'existe pas de chemin de 4 à 0
+Il n'existe pas de chemin de 4 à 1
+Il n'existe pas de chemin de 4 à 2
+Il n'existe pas de chemin de 4 à 3
+Chemin minimal de 4 à 4 : 4 (valeur 0)
+Chemin minimal de 4 à 5 : 4 -> 5 (valeur 5)
+Chemin minimal de 4 à 6 : 4 -> 5 -> 6 (valeur 3)
+Il n'existe pas de chemin de 5 à 0
+Il n'existe pas de chemin de 5 à 1
+Il n'existe pas de chemin de 5 à 2
+Il n'existe pas de chemin de 5 à 3
+Chemin minimal de 5 à 4 : 5 -> 4 (valeur 2)
+Chemin minimal de 5 à 5 : 5 (valeur 0)
+Chemin minimal de 5 à 6 : 5 -> 6 (valeur -2)
+Il n'existe pas de chemin de 6 à 0
+Il n'existe pas de chemin de 6 à 1
+Il n'existe pas de chemin de 6 à 2
+Il n'existe pas de chemin de 6 à 3
+Il n'existe pas de chemin de 6 à 4
+Il n'existe pas de chemin de 6 à 5
+Chemin minimal de 6 à 6 : 6 (valeur 0)
+------------------------------------
+1 - Afficher un chemin
+2 - Afficher tous les chemins
+3 - Arrêter
+Saisie : 3
+------------------------------------
+Quel graphe voulez-vous tester ?
+Saisie : stop
+
+Process finished with exit code 0
