@@ -33,10 +33,10 @@ def floyd_warshall(L) :
                     L[i][j] = L[i][k] + L[k][j] #on met à jour avec le chemin qui passe par k
                     P[i][j] = P[k][j] #le prédécesseur de j est celui du chemin de k à j
 
-        print("L après l'itération k =", k)
+        print("L après l'itération k =", k+1)
         afficher_graphe(L)
         print("")
-        print("P après l'itération k =", k)
+        print("P après l'itération k =", k+1)
         afficher_graphe(P)
         print("")
 
