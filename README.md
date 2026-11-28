@@ -88,6 +88,29 @@ si L[i][k] + L[k][j] < L[i][j]
 
 **Complexité :** `O(n³)` opérations pour le calcul (hors affichage) et `O(n²)` en mémoire.
 
+## Exemple d'application : où placer une caserne de pompiers ?
+
+Une commune fictive veut construire une caserne dans l'un de ses 15 quartiers. Les secours doivent atteindre le quartier le plus éloigné le plus vite possible.
+
+**Modélisation** (`graphe14.txt`) :
+
+- 15 sommets : les quartiers
+- 50 arcs : 22 rues à double sens (deux arcs chacune) et 6 rues à sens unique
+- valeur d'un arc : temps de trajet en minutes
+
+**Méthode :** dans la matrice `L` finale, la ligne `i` donne les temps depuis une caserne placée en `i`. On compare le temps le plus long de chaque ligne, puis le temps moyen sur les 15 quartiers.
+
+**Résultats :**
+
+| Solution | Temps le plus long | Temps moyen |
+|---|---:|---:|
+| Une caserne à la Mairie (sommet 7) | 12 min | 6,1 min |
+| Deux casernes au Centre (6) et au Collège (9) | 8 min | 4,4 min |
+
+La comparaison des paires de casernes se déduit de la matrice `L` : pour chaque quartier, on retient le plus petit des deux temps. Le programme ne la calcule pas directement.
+
+Le détail se trouve dans [le rapport](Rapport_Garnung-Nguyen.pdf).
+
 ## Graphes de test
 
 | Graphe | Sommets | Arcs | Circuit absorbant |
@@ -105,6 +128,7 @@ si L[i][k] + L[k][j] < L[i][j]
 | 11 | 5 | 8 | non |
 | 12 | 5 | 9 | non |
 | 13 | 8 | 12 | **oui** |
+| 14 | 15 | 50 | non |
 
 Les traces d'exécution sont dans `traces_graphes/` (une par graphe) et dans `trace_graphes_complet.txt`.
 
@@ -118,4 +142,6 @@ Les traces d'exécution sont dans `traces_graphes/` (une par graphe) et dans `tr
 | `floyd_warshall.py` | Algorithme et détection des circuits absorbants |
 | `chemin_minimal.py` | Reconstruction et affichage des chemins |
 | `graphe1.txt` à `graphe13.txt` | Graphes de test |
+| `graphe14.txt` | Graphe de l'exemple d'application |
 | `traces_graphes/`, `trace_graphes_complet.txt` | Traces d'exécution |
+| `Rapport_Garnung-Nguyen.pdf` | Rapport sur l'exemple d'application |
