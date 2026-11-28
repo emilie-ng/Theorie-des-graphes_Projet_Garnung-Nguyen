@@ -1,6 +1,6 @@
 # Floyd-Warshall : recherche des chemins les plus courts
 
-Projet de théorie des graphes, année 2026-2027.
+Projet de théorie des graphes, année 2026-2027.  
 Équipe : Justine GARNUNG, Emilie NGUYEN.
 
 Ce programme Python calcule, avec l'algorithme de Floyd-Warshall, les chemins de valeurs minimales entre tous les couples de sommets d'un graphe orienté et valué.
@@ -84,4 +84,38 @@ si L[i][k] + L[k][j] < L[i][j]
 
 **Circuit absorbant :** après chaque itération, une valeur négative sur la diagonale de `L` signale un circuit absorbant. Le calcul s'arrête alors.
 
-**Reconstruction d'un
+**Reconstruction d'un chemin :** on remonte les prédécesseurs dans `P` depuis le sommet d'arrivée.
+
+**Complexité :** `O(n³)` opérations pour le calcul (hors affichage) et `O(n²)` en mémoire.
+
+## Graphes de test
+
+| Graphe | Sommets | Arcs | Circuit absorbant |
+|---:|---:|---:|:---:|
+| 1 | 4 | 5 | non |
+| 2 | 4 | 5 | non |
+| 3 | 4 | 6 | non |
+| 4 | 4 | 6 | **oui** |
+| 5 | 4 | 7 | non |
+| 6 | 4 | 9 | **oui** |
+| 7 | 7 | 12 | non |
+| 8 | 5 | 7 | non |
+| 9 | 5 | 7 | non |
+| 10 | 5 | 7 | **oui** |
+| 11 | 5 | 8 | non |
+| 12 | 5 | 9 | non |
+| 13 | 8 | 12 | **oui** |
+
+Les traces d'exécution sont dans `traces_graphes/` (une par graphe) et dans `trace_graphes_complet.txt`.
+
+## Organisation du dépôt
+
+| Fichier | Rôle |
+|---|---|
+| `main.py` | Boucle principale |
+| `lire_graphe.py` | Lecture d'un fichier et construction de la matrice des valeurs |
+| `afficher_graphe.py` | Affichage aligné d'une matrice |
+| `floyd_warshall.py` | Algorithme et détection des circuits absorbants |
+| `chemin_minimal.py` | Reconstruction et affichage des chemins |
+| `graphe1.txt` à `graphe13.txt` | Graphes de test |
+| `traces_graphes/`, `trace_graphes_complet.txt` | Traces d'exécution |
